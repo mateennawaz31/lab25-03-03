@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the document ID"
+        android:id="@+id/DucumentIdET"
+        android:maxLines="1"
+        />
+
+    <EditText
+        android:layout_below="@id/DucumentIdET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Restaurent Name"
+        android:id="@+id/RestaurentIdET"
+        android:maxLines="1"
+        />
+
+    <EditText
+        android:layout_below="@id/RestaurentIdET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the City Name"
+        android:id="@+id/cityIdET"
+        android:maxLines="1"
+        />
+    <EditText
+        android:layout_below="@id/cityIdET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the Location"
+        android:id="@+id/LocationIdET"
+        android:maxLines="1"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/AddBtn"
+        android:text="ADD"
+        android:layout_below="@id/LocationIdET"
+        android:onClick="addvalues"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Tv"
+        android:layout_below="@id/AddBtn"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Tv"
+        android:text="Retrive"
+        android:onClick="retrive"
+        android:id="@+id/btn"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn"
+        android:text="Delete"
+        android:onClick="Delete"/>
+
+
+</RelativeLayout>
+
+
